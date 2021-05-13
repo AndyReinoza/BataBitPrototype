@@ -12,8 +12,8 @@
 
 * {
   box-sizing: border-box;
-  margin: 0%;
-  padding: 0%;  
+  margin: 0;
+  padding: 0;  
 }
 
 html{
@@ -85,6 +85,10 @@ header img{
     height: 8px;
     margin-left: 10px;
     background-image: url('../Assets/assets/icons/down-arrow.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 main{
@@ -135,7 +139,7 @@ text-align: center;
     width:70%;
     min-width: 235px;
     max-width: 500px;
-    height: 290px;
+    height: 360px;
     margin: 0 auto;
     font-family: "inter", sans-serif;
 }
@@ -146,12 +150,23 @@ text-align: center;
     line-height: 2.3rem;
     color: var(--bitcoin-organge);
 }
+
+.main-commision-table .main-commision-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+
+}
+
 .currency-table--container {
     width: 90%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
     margin:0 auto; 
+    border-radius: 15px;
 }
 .currency-table--container table {
     width: 100%;
@@ -208,14 +223,23 @@ text-align: center;
 }
 .currency-table--date {
     width: 190px;
-    height: 30px;
+    height: 31px;
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
     background-color: var(--soft-orange);
     border-radius: 8px;
 }
-.currency-table--date p{
+.commisions-table--date{
+    width: 190px;
+    height: 31px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+}
+.currency-table--date p, .commisions-table--date p{
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.5rem ;
@@ -264,7 +288,7 @@ text-align: center;
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
     margin: 15px auto;
     padding: 15px;
     background-color: var(--black);
@@ -275,6 +299,7 @@ text-align: center;
     display: inline-block;
     width: 20px;
     height: 20px;
+    margin: 0 auto;
     margin-bottom: 10px;
     background-image: url("../Assets/assets/icons/clock.svg");
     background-size: cover;
@@ -285,6 +310,7 @@ text-align: center;
     display: inline-block;
     width: 20px;
     height: 20px;
+    margin: 0 auto;
     margin-bottom: 10px;
     background-image: url("../Assets/assets/icons/eye.svg");
     background-size: cover;
@@ -295,6 +321,7 @@ text-align: center;
     display: inline-block;
     width: 20px;
     height: 20px;
+    margin: 0 auto;
     margin-bottom: 10px;
     background-image: url("../Assets/assets/icons/dollar-sign.svg");
     background-size: cover;
@@ -305,6 +332,7 @@ text-align: center;
     display: inline-block;
     width: 20px;
     height: 20px;
+    margin: 0 auto;
     margin-bottom: 10px;
     background-image: url("../Assets/assets/icons/check-circle.svg");
     background-size: cover;
